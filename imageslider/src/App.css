@@ -1,0 +1,63 @@
+/* App.css */
+import './App.css';
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ABE2, #5563DE);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.img-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.img-slider h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.img-slider img {
+  width: 600px;
+  height: 350px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+
+.img-slider img:hover {
+  transform: scale(1.05);
+}
+
+.slider-btn {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+
+.slider-btn button {
+  background: #fff;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.slider-btn button:hover {
+  background: #333;
+  color: #fff;
+  transform: scale(1.1);
+}
